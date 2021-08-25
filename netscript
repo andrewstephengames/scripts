@@ -1,0 +1,4 @@
+#!/bin/sh
+while true; do
+    ip a | grep '192.168.0.206' > /dev/null && ping -c 1 192.168.0.1 && ping -c 1 archlinux.org && notify-send -t 5 "Network available!"; break || notify-send -t 5 "Network unreachable!"; break
+done

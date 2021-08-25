@@ -1,0 +1,11 @@
+#!/bin/sh
+echo choose vm
+read vm_name
+touch ~/.local/share/applications/"$vm_name".desktop
+echo "[Desktop Entry]
+Name="$vm_name" 
+Comment=Script generated virtual machine
+Exec=~/qemu/"$vm_name"/"$vm_name".sh
+Categories=System
+Icon=qemu
+Keywords="$vm_name";vm;virt;" > ~/.local/share/applications/"$vm_name".desktop

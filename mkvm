@@ -1,0 +1,44 @@
+#!/bin/sh
+cd ~/qemu
+echo 'What name would you like the vm to have?'
+read vm_name
+echo 'How much ram would you like the vm to have in MB?'
+read ram_mb
+echo 'How many cores would you like to dedicate to the vm?'
+read cores
+echo 'Please provide the location to the cdrom installation image.'
+read cdrom
+echo 'Please provide the size of the vm that you wish in GB.'
+read vmsize
+mkdir $vm_name
+cd $vm_name
+touch "$vm_name".sh
+chmod +x "$vm_name".sh
+qemu-img create -f raw image.raw "$vmsize"
+echo "qemu-system-x86_64 \
+-enable-kvm \
+-m "$ram_mb" \
+-smp "$cores" \
+-cpu host \
+-device ES1370 \
+-device virtio-mouse-pci -device virtio-keyboard-pci \
+-serial mon:stdio \
+-boot menu=on \
+-device usb-ehci,id=ehci -device usb-host,bus=ehci.0,vendorid=0x04e8,productid=0x6860 \
+-usb -device usb-tablet \
+-net nic \
+-net user,hostfwd=tcp::5555-:22 \
+-device virtio-vga,virgl=on \
+-display gtk,gl=on,show-cursor=on \
+-hda ~/qemu/"$vm_name"/image.raw \
+-cdrom "$cdrom"" > "$vm_name".sh
+touch ~/.local/share/applications/"$vm_name".desktop
+echo "[Desktop Entry]
+Name="$vm_name"
+Comment=Script generated virtual machine
+Exec=$HOME/qemu/"$vm_name"/"$vm_name".sh
+Categories=System
+Type=Application
+Icon=qemu
+Terminal=false
+Keywords="$vm_name";vm;virt;" > ~/.local/share/applications/"$vm_name".desktop
