@@ -16,3 +16,4 @@ cp redshift/redshift.conf ~/.config/redshift/
 cp rofi/config.rasi ~/.config/rofi/
 cp tabliss/tabliss.json ~/.config/tabliss/
 cp youtube/config ~/.config/youtube
+cp .xinitrc .profile .bashrc .bash_profile .Xresources .vimrc .xprofile ~/
