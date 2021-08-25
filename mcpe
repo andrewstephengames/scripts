@@ -4,5 +4,6 @@ xrandr --output VGA1 --mode 1280x720 --rate 75
 ~/AppImages/*.AppImage
 while true; do
     [[ $(ps -e | grep 'MINECRAFT') ]] || picom --experimental-backends &
+    wmctrl -c Launcher Error
     xrandr --output VGA1 --mode 1920x1080 --rate 60; break
 done
