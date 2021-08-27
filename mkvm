@@ -7,7 +7,7 @@ read ram_mb
 echo 'How many cores would you like to dedicate to the vm?'
 read cores
 echo 'Please provide the location to the cdrom installation image.'
-read cdrom
+cdrom=$(zenity --file-selection)
 echo 'Please provide the size of the vm that you wish in GB.'
 read vmsize
 mkdir $vm_name

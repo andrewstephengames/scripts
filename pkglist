@@ -137,7 +137,6 @@ prototool-bin
 pulseaudio
 python-pip
 python-pywayland
-python-pywlroots
 python-pyxdg
 python-setuptools
 python-xkbcommon
@@ -176,7 +175,6 @@ usbutils
 w3m
 which
 wine
-wlroots
 wmctrl
 woeusb
 xarchiver
@@ -231,4 +229,5 @@ xterm
 youtube-dl
 zathura
 zathura-pdf-mupdf
+zenity
 zulu-16-bin
