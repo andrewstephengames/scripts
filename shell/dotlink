@@ -1,0 +1,20 @@
+#!/bin/sh
+cd ~/.config/
+mkdir neofetch/ dunst/ dwm/ flameshot/ htop/ openbo/ picom/ qtile/ redshift/ rofi/ tabliss/ youtube/
+cd ~/arch-dots/
+\cp -r obmenu-generator/ ~/.config/obmenu-generator
+\cp neofetch/config.conf ~/.config/neofetch/
+\cp dunst/dunstrc ~/.config/dunst/
+\cp dwm/* ~/.config/dwm/
+\cp flameshot/flameshot.ini ~/.config/flameshot/
+\cp htop/htoprc ~/.config/htop/
+\cp -r lpanel/ ~/.config/lxpanel
+\cp openbo/* ~/.config/openbox/
+\cp picom/picom.conf ~/.config/picom/
+\cp -r qtile/ ~/.config/qtile/
+\cp redshift/redshift.conf ~/.config/redshift/
+\cp rofi/config.rasi ~/.config/rofi/
+\cp tabliss/tabliss.json ~/.config/tabliss/
+\cp youtube/config ~/.config/youtube
+\cp .initrc .profile .bashrc .bash_profile .Xresources .vimrc .xprofile ~/
+\cp -r .vim/ ~/
