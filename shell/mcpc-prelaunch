@@ -1,0 +1,3 @@
+#!/bin/sh
+pkill picom
+xrandr -s 1280x720 -r 75
