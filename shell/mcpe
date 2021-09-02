@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 pkill picom
 xrandr --output VGA1 --mode 1280x720 --rate 75
 ~/AppImages/*.AppImage

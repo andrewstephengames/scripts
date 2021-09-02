@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 cd ~/qemu
 echo 'What name would you like the vm to have?'
 read vm_name
