@@ -45,9 +45,14 @@ declare -a cows=(
         "vader-koala"
         "www"
 )
+rand="$(shuf -i 0-2 | head -n1)"
 
 for i in "${cows[@]}"
     do
-       i="$(shuf -i 0-42 | head -n1)"
-       fortune | cowsay -f "${cows["$i"]}"; break
+        i="$(shuf -i 0-43 | head -n1)"
+        if [ $rand == 1 ] ; then
+            command=$(fortune | cowsay -f "${cows["$i"]}" | lolcat); echo "$command"; break
+        else
+            command=$(fortune | cowsay -f "${cows["$i"]}"); echo "$command"; break
+        fi
     done
