@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+notify-send "$(printf "PS\tCPU\tPID\n"; ps -eo "%C %c %p %u" | sort -nr | head -n5 | awk {'print $2"\t"$1"\t"$3'})"
