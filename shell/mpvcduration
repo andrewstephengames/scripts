@@ -1,0 +1,2 @@
+#!/bin/sh
+printf "%s" "$(mpvc | head -n2 | tail -n1 | awk '{print $3}')"

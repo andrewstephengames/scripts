@@ -4,12 +4,12 @@ echo "Do you want to shuffle the playlist? (y/n)"
 read shuffle
 echo "Do you want to loop the playlist? (y/n)"
 read loop
-if (( $loop == "y" ) && ( "$shuffle" == "y" )); then
-    mpv "$(ls -d */ | fzf)"* --loop --shuffle --vo=null; exit
+if (( $loop == "y" ) && ( $shuffle == "y" )); then
+    mpv "$(ls -d */ | fzf)"* --loop --shuffle --vo=null ; exit
 fi
 if (( $shuffle == "y" )); then
-    mpv "$(ls -d */ | fzf)"* --shuffle --vo=null; exit
+    mpv "$(ls -d */ | fzf)"* --shuffle --vo=null ; exit
 fi
 if (( $loop == "y" )); then
-    mpv "$(ls -d */ | fzf)"* --loop --vo=null; exit
+    mpv "$(ls -d */ | fzf)"* --loop --vo=null ; exit
 fi
