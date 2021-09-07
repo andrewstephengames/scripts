@@ -1,15 +1,8 @@
 #!/usr/bin/env bash
 cd ~/Music
-echo "Do you want to shuffle the playlist? (y/n)"
+echo "Do you want to shuffle the playlist? (Y/n)"
 read shuffle
-echo "Do you want to loop the playlist? (y/n)"
-read loop
-if (( $loop == "y" ) && ( $shuffle == "y" )); then
-    mpv "$(ls -d */ | fzf)"* --loop --shuffle --vo=null ; exit
-fi
-if (( $shuffle == "y" )); then
-    mpv "$(ls -d */ | fzf)"* --shuffle --vo=null ; exit
-fi
-if (( $loop == "y" )); then
-    mpv "$(ls -d */ | fzf)"* --loop --vo=null ; exit
-fi
+[[ "$shuffle" == "y" ]] && mpv "$(ls -d */ | fzf)"* --shuffle --vo=null && exit
+[[ "$shuffle" == "Y" ]] && mpv "$(ls -d */ | fzf)"* --shuffle --vo=null && exit
+[[ "$shuffle" == "" ]] && mpv "$(ls -d */ | fzf)"* --shuffle --vo=null && exit
+mpv "$(ls -d */ | fzf)"* --vo=null && exit
