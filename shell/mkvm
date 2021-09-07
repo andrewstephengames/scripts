@@ -7,9 +7,11 @@ read ram_mb
 echo 'How many cores would you like to dedicate to the vm?'
 read cores
 echo 'Please provide the location to the cdrom installation image.'
-cdrom=$(zenity --file-selection)
+cd ~/iso
+cdrom=$(ls | fzf)
 echo 'Please provide the size of the vm that you wish in GB.'
 read vmsize
+cd ~/qemu
 mkdir $vm_name
 cd $vm_name
 touch "$vm_name".sh
@@ -31,7 +33,7 @@ echo "qemu-system-x86_64 \
 -device virtio-vga \
 -display gtk,gl=on,show-cursor=on \
 -hda ~/qemu/"$vm_name"/image.raw \
--cdrom "$cdrom"" > "$vm_name".sh
+-cdrom ~/iso/"$cdrom"" > "$vm_name".sh
 touch ~/.local/share/applications/"$vm_name".desktop
 echo "[Desktop Entry]
 Name="$vm_name"
