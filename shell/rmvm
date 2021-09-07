@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+cd ~/qemu
+vm_name="$(ls -d */ | sed 's|/||' | fzf)"
+\rm -ir $vm_name
+\rm -i ~/.local/share/applications/"$vm_name".desktop
