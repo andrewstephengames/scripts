@@ -1,5 +1,5 @@
 #!/bin/sh
 cd ~/.config/
-\cp -r alacritty/ dunst/ dwm/ flameshot/ htop/ lxpanel/ neofetch/ obmenu-generator/ openbox/ picom/ qtile/ redshift/ rofi/ tabliss/ youtube/ ~/arch-dots/
+\cp -r alacritty/ dunst/ dwm/ flameshot/ htop/ lxpanel/ neofetch/ obmenu-generator/ openbox/ picom/ qtile/ redshift/ rofi/ tabliss/ youtube/ mpv/ ~/arch-dots/
 cd
 \cp .bashrc .vimrc .xinitrc .profile .xprofile .bash_profile .Xresources arch-dots/
