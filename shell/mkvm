@@ -30,7 +30,7 @@ echo "qemu-system-x86_64 \
 -usb -device usb-tablet \
 -net nic \
 -net user,hostfwd=tcp::5555-:22 \
--device virtio-vga \
+-device virtio-vga-gl \
 -display gtk,gl=on,show-cursor=on \
 -hda ~/qemu/"$vm_name"/image.raw \
 -cdrom ~/iso/"$cdrom"" > "$vm_name".sh
