@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+day="$(expr $(date +%d) \- 1)"
+date +"$day"-%m-%Y
+
+curl -s https://ph.prefectura.mai.gov.ro/rata-incidentei-cumulative-a-covid-19-pe-localitati-la-data-de-"$day"-"$(date +%m)"-"$(date +%Y)"/ | bat  | grep -A 2 'PLOIE' | sed 's/<td>//' | sed 's|</td>||' | tail -n1
