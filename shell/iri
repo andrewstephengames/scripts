@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+echo 'Pick day to see ri for.'
+read day
+echo 'Now pick month.'
+read month
+echo 'Now pick year.'
+read year
+
+curl -s https://ph.prefectura.mai.gov.ro/rata-incidentei-cumulative-a-covid-19-pe-localitati-la-data-de-"$day"-"$month"-"$year"/ | bat  | grep -A 2 'PLOIE' | sed 's/<td>//' | sed 's|</td>||' | tail -n1
