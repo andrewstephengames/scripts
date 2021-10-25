@@ -1,7 +1,7 @@
 #!/bin/sh
 cd ~/.config/
 mkdir neofetch/ dunst/ dwm/ dmenu/ flameshot/ htop/ openbox/ picom/ qtile/ redshift/ rofi/ tabliss/ youtube/
-cd ~/arch-dots/
+cd ~/sweet-dots/
 \cp -r obmenu-generator/ ~/.config/obmenu-generator
 \cp neofetch/config.conf ~/.config/neofetch/
 \cp dunst/dunstrc ~/.config/dunst/
