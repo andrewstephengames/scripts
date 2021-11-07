@@ -1,6 +1,6 @@
 #!/bin/sh
 cd ~/.config/
-mkdir neofetch/ dunst/ dwm/ dmenu/ flameshot/ htop/ openbox/ picom/ qtile/ redshift/ rofi/ tabliss/ youtube/
+mkdir neofetch/ dunst/ dwm/ dmenu/ flameshot/ htop/ openbox/ picom/ qtile/ redshift/ rofi/ tabliss/ youtube/ sway/
 cd ~/sweet-dots/
 \cp -r obmenu-generator/ ~/.config/obmenu-generator
 \cp neofetch/config.conf ~/.config/neofetch/
@@ -16,6 +16,7 @@ cd ~/sweet-dots/
 \cp redshift/redshift.conf ~/.config/redshift/
 \cp rofi/config.rasi ~/.config/rofi/
 \cp tabliss/tabliss.json ~/.config/tabliss/
+\cp sway/config ~/.config/sway
 \cp youtube/config ~/.config/youtube
 \cp .xinitrc .profile .bashrc .bash_profile .Xresources .vimrc .xprofile ~/
 \cp -r .vim/ ~/
