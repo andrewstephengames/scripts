@@ -1,0 +1,5 @@
+#!/bin/sh
+cd $HOME/wallpapers/
+num=$(ls *.jpg | sort -R | head -n1)
+sed -i '$d' $HOME/.config/sway/config
+echo "output * bg $HOME/wallpapers/$num fill" >> $HOME/.config/sway/config
