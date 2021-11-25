@@ -31,7 +31,7 @@ echo "qemu-system-x86_64 \
 -net nic \
 -net user,hostfwd=tcp::5555-:22 \
 -device virtio-vga-gl \
--display gtk,gl=on,show-cursor=on \
+-display sdl,gl=on,show-cursor=on \
 -hda ~/qemu/"$vm_name"/image.raw \
 -cdrom ~/iso/"$cdrom"" > "$vm_name".sh
 touch ~/.local/share/applications/"$vm_name".desktop
