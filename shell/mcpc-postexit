@@ -1,3 +1,4 @@
 #!/bin/sh
 picom &
-xrandr -s 1920x1080
+[[ "$XDG_SESSION_TYPE" = "wayland" ]] && swaymsg output VGA-1 mode 1920x1080
+[[ "$XDG_SESSION_TYPE" = "x11" ]] && xrandr -s 1920x1080
