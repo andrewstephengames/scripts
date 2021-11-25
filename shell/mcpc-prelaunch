@@ -1,3 +1,4 @@
 #!/bin/sh
 pkill picom
-xrandr -s 1280x720 -r 75
+#[[ "$XDG_SESSION_TYPE" = "wayland" ]] && swaymsg output VGA-1 resolution --custom 1280x720@75hz
+[[ "$XDG_SESSION_TYPE" = "x11" ]] && xrandr -s 1280x720 -r 75
