@@ -2,7 +2,6 @@ adobe-source-code-pro-fonts
 alacritty
 alsa-plugins
 alsa-utils
-anbox-modules-dkms
 android-apktool
 appimagelauncher
 arc-icon-theme
@@ -15,6 +14,7 @@ atool
 audacity
 automake
 autotiling
+balena-etcher
 base
 bash-pipes
 bat
@@ -33,13 +33,13 @@ cdrtools
 chaotic-keyring
 chaotic-mirrorlist
 clamav
+cloc
 cmatrix
 codeblocks
 cool-retro-term
 copyq
 cowfortune
 cowsay
-cpulimit
 csfml
 deadbeef
 deadbeef-plugin-discord-git
@@ -120,6 +120,7 @@ libreoffice-fresh
 libva-intel-driver
 libva-utils
 libwnck
+limitcpu
 linux
 linux-firmware
 linux-headers
@@ -224,7 +225,6 @@ supertux
 sway
 sway-alttab-bin
 swaynagmode
-swayr
 sxiv
 tela-icon-theme
 tesseract
@@ -315,7 +315,7 @@ xournalpp
 xsel
 xterm
 ydotool
-youtube-dl
+yt-dlp
 zathura
 zathura-pdf-mupdf
 zenity
