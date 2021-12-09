@@ -1,0 +1,2 @@
+#!/bin/sh
+vblank_mode=0,DRI_PRIME=1 mesa_glthread=true multimc
