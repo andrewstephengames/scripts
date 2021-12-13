@@ -11,9 +11,8 @@ ark
 asp
 atomicparsley
 atool
-audacity
 automake
-autotiling
+autotiling-rs-git
 balena-etcher
 base
 bash-pipes
@@ -43,6 +42,7 @@ cowsay
 csfml
 deadbeef
 deadbeef-plugin-discord-git
+debtap
 dex2jar
 dhcpcd
 discord
@@ -87,6 +87,7 @@ gst-plugins-bad
 gtk-engine-murrine
 gtk2-perl
 gvim
+hdparm
 htop-vim
 imagemagick
 intel-ucode
@@ -126,7 +127,6 @@ linux-firmware
 linux-headers
 linux-lts
 linux-lts-headers
-linux-xanmod-anbox
 linux-zen
 linux-zen-headers
 lolcat
@@ -142,6 +142,7 @@ man-pages
 mangohud
 mcrcon
 mesa-demos
+mesa-utils
 minecraft-c
 minetest
 mlocate
@@ -227,6 +228,8 @@ sway-alttab-bin
 swaynagmode
 sxiv
 tela-icon-theme
+tenacity-git
+terminus-font
 tesseract
 texinfo
 tigervnc
