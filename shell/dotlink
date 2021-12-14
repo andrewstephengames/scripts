@@ -1,9 +1,10 @@
 #!/bin/sh
 cd ~/.config/
-mkdir neofetch/ dunst/ dwm/ dmenu/ flameshot/ htop/ openbox/ picom/ qtile/ redshift/ rofi/ tabliss/ youtube/ sway/
+mkdir neofetch/ dunst/ dwm/ dmenu/ flameshot/ htop/ openbox/ picom/ qtile/ redshift/ rofi/ tabliss/ youtube/ sway/ cool-retro-term/
 cd ~/sweet-dots/
 \cp -r obmenu-generator/ ~/.config/obmenu-generator
 \cp neofetch/config.conf ~/.config/neofetch/
+\cp cool-retro-term/cool-retro-term.json ~/.config/cool-retro-term/
 \cp dunst/dunstrc ~/.config/dunst/
 \cp dwm/* ~/.config/dwm/
 \cp dmenu/* ~/.config/dmenu
