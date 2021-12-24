@@ -3,6 +3,7 @@ alacritty
 alsa-plugins
 alsa-utils
 android-apktool
+android-file-transfer
 appimagelauncher
 arc-icon-theme
 arch-install-scripts
@@ -39,6 +40,7 @@ cool-retro-term
 copyq
 cowfortune
 cowsay
+cpupower-gui-git
 csfml
 deadbeef
 deadbeef-plugin-discord-git
@@ -54,6 +56,7 @@ edk2-armvirt
 edk2-ovmf
 element
 elementary-wallpapers
+emote
 exa
 faad2
 fakeroot
@@ -86,6 +89,7 @@ gsimplecal
 gst-plugins-bad
 gtk-engine-murrine
 gtk2-perl
+guvcview-qt
 gvim
 hdparm
 htop-vim
@@ -150,6 +154,7 @@ mlocate
 moon-buggy
 mpv
 mpvc-git
+mtpfs
 multimc5-offline
 mypaint
 ncdu
@@ -166,6 +171,7 @@ ntfs-3g
 obconf
 obmenu-generator
 obs-studio
+oldschool-pc-fonts
 openbox
 opendoas
 opengl-man-pages
@@ -197,6 +203,7 @@ python-pywlroots
 python-pyxdg
 python-setuptools
 python-xkbcommon
+qbittorrent
 qemu
 qemu-arch-extra
 qt5-styleplugins
