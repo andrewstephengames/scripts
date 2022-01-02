@@ -2,4 +2,4 @@
 cd ~/.config/
 \cp -r alacritty/ dunst/ dwm/ dmenu/ flameshot/ htop/ lxpanel/ neofetch/ obmenu-generator/ openbox/ picom/ qtile/ redshift/ rofi/ tabliss/ youtube/ mpv/ sway/ cool-retro-term/ ~/sweet-dots/
 cd
-\cp .bashrc .vimrc .xinitrc .profile .xprofile .bash_profile .Xresources sweet-dots/
+\cp .bashrc .bash_aliases .vimrc .xinitrc .profile .xprofile .bash_profile .Xresources sweet-dots/

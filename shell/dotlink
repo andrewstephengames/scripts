@@ -19,5 +19,5 @@ cd ~/sweet-dots/
 \cp tabliss/tabliss.json ~/.config/tabliss/
 \cp sway/config ~/.config/sway
 \cp youtube/config ~/.config/youtube
-\cp .xinitrc .profile .bashrc .bash_profile .Xresources .vimrc .xprofile ~/
+\cp .xinitrc .profile .bashrc .bash_profile .bash_aliases .Xresources .vimrc .xprofile ~/
 \cp -r .vim/ ~/
