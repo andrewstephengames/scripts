@@ -265,6 +265,7 @@ xdg-desktop-portal-wlr
 xdotool
 xf86-video-intel
 xorg-server
+xorg-xauth
 xorg-xeyes
 xorg-xinit
 xorg-xkill
