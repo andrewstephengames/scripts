@@ -73,6 +73,7 @@ expac
 faad2
 fakeroot
 featherpad
+feh
 ffmpegthumbnailer
 figlet
 file-roller
@@ -90,6 +91,7 @@ gcolor2
 gdm
 geany
 gedit
+gespeaker
 gimp
 git
 glfw-wayland-minecraft-libdecoration
@@ -128,6 +130,8 @@ gnome-video-effects
 gnome-weather
 godot
 gparted
+gpicview
+granite
 grilo-plugins
 grim
 grub
@@ -170,6 +174,7 @@ kdeplasma-addons
 kgamma5
 khotkeys
 kinfocenter
+kitty
 kolourpaint
 konsole
 kscreen
@@ -302,10 +307,12 @@ qemu
 qt5-styleplugins
 qt5-tools
 qt5ct-kde
+qterminal
 qtile
 ranger
 redshift
 reflector
+river
 rofi
 rofi-emoji
 rtmpdump
@@ -333,8 +340,10 @@ sway-alttab-bin
 swaynagmode
 sxiv
 tela-icon-theme
+telegram-desktop
 tenacity-git
 terminus-font
+tesseract
 texinfo
 thunar
 tldr
@@ -359,7 +368,6 @@ virtualbox
 w3m
 waterfox-g4-bin
 waydroid
-webtorrent-cli
 weston
 which
 wine
@@ -372,6 +380,7 @@ wofi
 xarchiver
 xcb-util-cursor
 xclip
+xcompmgr
 xcursor-vanilla-dmz
 xdg-desktop-portal
 xdg-desktop-portal-kde
@@ -379,11 +388,21 @@ xdg-desktop-portal-wlr
 xdg-user-dirs-gtk
 xdotool
 xf86-video-intel
+xfce4-cpugraph-plugin
+xfce4-diskperf-plugin
+xfce4-netload-plugin
+xfce4-panel
+xfce4-pulseaudio-plugin
+xfce4-sensors-plugin
+xfce4-weather-plugin
+xfce4-whiskermenu-plugin
 xorg-server
 xorg-xauth
 xorg-xeyes
 xorg-xinit
 xorg-xkill
+xorg-xprop
+xorg-xset
 xorg-xwayland
 xsel
 xterm
