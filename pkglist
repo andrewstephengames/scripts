@@ -3,14 +3,13 @@ alacritty
 alsa-plugins
 alsa-utils
 anbox-git
-anbox-image-houdini-rooted
+anbox-image-gapps-rooted
 android-apktool
-android-armv7a-eabi-system-image-23
-android-emulator
 android-file-transfer
 arc-icon-theme
 arch-install-scripts
 archlinux-wallpaper
+armcord-bin
 asp
 atomicparsley
 atool
@@ -22,6 +21,7 @@ bash-pipes
 bat
 bdf-unifont
 binutils
+blanket
 bluedevil
 breeze
 breeze-gtk
@@ -53,7 +53,6 @@ deadbeef-plugin-discord-git
 debtap
 deepin-image-viewer
 dhcpcd
-discord
 discover
 dmenu
 dnsmasq
@@ -63,6 +62,7 @@ dunst
 edk2-armvirt
 edk2-ovmf
 element
+elementary-icon-theme
 elementary-wallpapers
 emote
 eog
@@ -94,7 +94,8 @@ gedit
 gespeaker
 gimp
 git
-glfw-wayland-minecraft-libdecoration
+gkrellm
+glfw-wayland-minecraft
 gnome-backgrounds
 gnome-bluetooth
 gnome-books
@@ -159,11 +160,14 @@ hypnotix
 i3-wm
 imagemagick
 inetutils
+intel-gpu-tools
 intel-ucode
 inter-font
 inxi-git
+iotop
 iptables-nft
 jadx
+java-openjdk-bin
 jdk8-openjdk
 jmtpfs
 jre-openjdk
@@ -174,7 +178,6 @@ kdeplasma-addons
 kgamma5
 khotkeys
 kinfocenter
-kitty
 kolourpaint
 konsole
 kscreen
@@ -183,6 +186,7 @@ ksysguard
 kwallet-pam
 kwin-bismuth
 kwrited
+lib32-gamemode
 lib32-giflib
 lib32-gnutls
 lib32-gst-plugins-base-libs
@@ -197,6 +201,7 @@ libkeybinder2
 libmad
 libreoffice-fresh
 libva-intel-driver
+libva-mesa-driver
 libva-utils
 libwnck
 limitcpu
@@ -211,6 +216,7 @@ lolcat
 lutris
 lxappearance
 lximage-qt
+lxinput
 lxpanel
 lxqt-panel
 lxsession
@@ -232,6 +238,7 @@ minetest
 mlocate
 mono
 moon-buggy
+mousai
 mpv
 mpvc-git
 mtpfs
@@ -249,6 +256,7 @@ noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
 noto-fonts-extra
+nsxiv
 ntfs-3g
 obconf
 obmenu-generator
@@ -315,6 +323,7 @@ reflector
 river
 rofi
 rofi-emoji
+rsync
 rtmpdump
 rygel
 scrcpy
@@ -338,10 +347,8 @@ sushi
 sway
 sway-alttab-bin
 swaynagmode
-sxiv
 tela-icon-theme
 telegram-desktop
-tenacity-git
 terminus-font
 tesseract
 texinfo
@@ -355,20 +362,22 @@ tracker3-miners
 transmission-gtk
 ttf-font-awesome
 ttf-inconsolata
+ttf-jetbrains-mono
 ttf-liberation
 ttf-ms-fonts
 ttf-roboto
 ttf-roboto-mono
 tty-clock
+ultimmc-bin
 unclutter
 unzip
 usbutils
 vino
-virtualbox
+virt-manager
 w3m
 waterfox-g4-bin
-waydroid
 weston
+wget
 which
 wine
 wl-clipboard
@@ -412,3 +421,4 @@ yt-dlp
 zathura
 zathura-pdf-mupdf
 zenity
+zulu-17-bin

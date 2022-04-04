@@ -2,5 +2,5 @@
 cd $HOME/wallpapers/
 wall=$(ls *.jpg | sort -R | head -n1)
 notify-send "$(echo $wall)"
-[[ $XDG_SESSION_TYPE = "x11" ]] && feh --bg-fill "$wall" || swaybg -i "$wall" -m fill
-#[[ $XDG_SESSION_TYPE = "wayland" ]] && swaybg -i "$wall" -m fill
+[[ $XDG_SESSION_TYPE = "x11" ]] && feh --bg-fill "$wall"
+[[ $XDG_SESSION_TYPE = "wayland" ]] && swaybg -i "$wall" -m fill
