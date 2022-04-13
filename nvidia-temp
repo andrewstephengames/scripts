@@ -1,0 +1,2 @@
+#!/bin/sh
+printf "$(nvidia-smi | head | tail -n1 | awk '{print $3}' | sed 's/C//g')"ºC
