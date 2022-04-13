@@ -5,4 +5,4 @@ cd ~/Music
 #[[ "$shuffle" == "y" ]] && mpv "$(ls -d */ | fzf)"* --shuffle  && exit
 #[[ "$shuffle" == "Y" ]] && mpv "$(ls -d */ | fzf)"* --shuffle  && exit
 #[[ "$shuffle" == "" ]] && mpv "$(ls -d */ | fzf)"* --shuffle  && exit
-mpv "$(ls -d */ | fzf)"* --shuffle && exit
+mpv "$(ls -d */ | fzf)"* --shuffle --input-ipc-server=/tmp/mpvsocket && exit
