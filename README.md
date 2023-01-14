@@ -16,4 +16,4 @@ Recommended packages to have installed:
 
 * `wmctrl`
 
-Also check out the **arch-dots** repository for any configuration related to the scripts.
+Also check out the **sweet-dots** repository for any configuration related to the scripts.
