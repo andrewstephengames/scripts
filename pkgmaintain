@@ -1,4 +1,4 @@
 #!/bin/sh
-cd /home/andrew/scripts/
+cd $HOME/git/scripts/
 > pkglist
-pacman -Qqe > pkglist
+pacman -Qqe > $HOME/git/scripts/pkglist

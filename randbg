@@ -1,6 +1,7 @@
-#!/bin/sh
-cd $HOME/wallpapers/
+#!/usr/bin/env bash
+cd $HOME/Pictures/wallpapers/
 wall=$(ls *.jpg | sort -R | head -n1)
-notify-send "$(echo $wall)"
-[[ $XDG_SESSION_TYPE = "x11" ]] && feh --bg-fill "$wall"
+#notify-send "$(echo $wall)"
+prevhome=$HOME/Pictures/wallpapers/
+[[ $XDG_SESSION_TYPE = "x11" ]] && HOME=$HOME/.config/feh feh --bg-fill "$prevhome/$wall"
 [[ $XDG_SESSION_TYPE = "wayland" ]] && swaybg -i "$wall" -m fill

@@ -1,0 +1,6 @@
+#!/bin/sh
+case $1 in
+     -0) printf "%s" "$(mconnectctl show-battery /org/mconnect/device/0 | head -n1 | awk '{print $2}')" ;;
+     -1) printf "%s" "$(mconnectctl show-battery /org/mconnect/device/1 | head -n1 | awk '{print $2}')" ;;
+     -2) printf "%s" "$(mconnectctl show-battery /org/mconnect/device/2 | head -n1 | awk '{print $2}')" ;;
+esac
