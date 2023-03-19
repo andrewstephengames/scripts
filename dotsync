@@ -1,5 +1,5 @@
 #!/bin/sh
 cd ~/.config/
-\cp -r alacritty/ dunst/ dwm/ dmenu/ flameshot/ htop/ lxpanel/ neofetch/ obmenu-generator/ openbox/ picom/ qtile/ redshift/ rofi/ tabliss/ youtube/ mpv/ sway/ cool-retro-term/ xfce4/ ~/git/sweet-dots/
+\cp -r alacritty/ dunst/ dwm/ dmenu/ flameshot/ htop/ lxpanel/ neofetch/ obmenu-generator/ openbox/ picom/ qtile/ redshift/ rofi/ tabliss/ youtube/ mpv/ sway/ cool-retro-term/ xfce4/ .newsboat/ ~/git/sweet-dots/
 cd
 \cp .bashrc .bash_aliases .vimrc .xinitrc .profile .xprofile .bash_profile .Xresources git/sweet-dots/
