@@ -1,0 +1,2 @@
+#!/bin/sh
+rsync -rv /home/andrew/git/andrewstephen.xyz/ root@andrewstephen.xyz:/var/www/andrewstephen
