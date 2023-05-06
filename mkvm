@@ -22,7 +22,7 @@ echo "qemu-system-x86_64 \
 -m "$ram_mb" \
 -smp "$cores" \
 -cpu host \
--device ES1370 \
+-device usb-audio \
 -device virtio-mouse-pci -device virtio-keyboard-pci \
 -serial mon:stdio \
 -boot menu=on \
