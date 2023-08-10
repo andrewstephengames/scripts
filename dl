@@ -1,0 +1,2 @@
+#!/bin/sh
+rm /tmp/stuff* 2> /dev/null; yt-dlp -f 'bestvideo[height<=720]+bestaudio/best[height<=720]' --external-downloader aria2c --external-downloader-args '-c -j 16 -x 16 -s 16 -k 1M' -o '/tmp/stuff' $1 --quiet --no-warnings; HOME=/home/andrew mpv --really-quiet --demuxer-max-bytes=1G --fs /tmp/stuff*
