@@ -1,0 +1,8 @@
+# https://wiki.archlinux.org/title/Dark_mode_switching
+#!/bin/sh
+while true; do
+     sunwait wait set 44.940399N 26.023821E
+     lookandfeeltool -a stuff
+     sunwait wait rise 44.940399N 26.023821E
+     lookandfeeltool -a white
+done
