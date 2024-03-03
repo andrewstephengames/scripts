@@ -1,2 +1,2 @@
 #!/bin/sh
-rsync -rv /home/andrew/git/andrewstephen.xyz/ root@andrewstephen.xyz:/var/www/andrewstephen
+rsync -rv --info=progress2 /home/andrew/git/andrewstephen.xyz/ root@andrewstephen.xyz:/srv/http/andrewstephen
