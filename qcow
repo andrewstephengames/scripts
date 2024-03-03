@@ -1,0 +1,13 @@
+#!/bin/sh -xe
+
+[[ ! -d ~/vm ]] && echo "Make a ~/vm directory"
+
+if [ $1 == "connect" ]; then
+     sudo modprobe nbd max_part=8
+     sudo qemu-nbd --connect=/dev/nbd0 $2
+     sudo mount /dev/nbd0p2 ~/vm
+elif [ $1 == "disconnect" ]; then
+     sudo umount ~/vm
+     sudo qemu-nbd --disconnect /dev/nbd0
+     sudo rmmod nbd
+fi
