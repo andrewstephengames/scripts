@@ -6,9 +6,11 @@ Recommended packages to have installed:
 
 * `git`
 
-* `fzf`
+* `ffmpeg`
 
 * `mpv`
+
+* `fzf`
 
 * `mpvc` (for music scripts)
 
@@ -16,4 +18,4 @@ Recommended packages to have installed:
 
 * `wmctrl`
 
-Also check out the **sweet-dots** repository for any configuration related to the scripts.
+Also check out the **[sweet-dots](https://github.com/andrewstephengames/sweet-dots)** repository for any configuration pertaining to the scripts.
