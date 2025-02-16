@@ -12,6 +12,8 @@ Recommended packages to have installed:
 
 * `fzf`
 
+* `zenity`
+
 * `mpvc` (for music scripts)
 
 * `xdotool`
