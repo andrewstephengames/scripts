@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
+if [ ! -z $1 ]; then
+	cd ~/Music/$1
+	mpv "$(ls -d */ | fzf)"* --shuffle && exit
+fi
 cd ~/Music
-#echo "Do you want to shuffle the playlist? (Y/n)"
-#read shuffle
-#[[ "$shuffle" == "y" ]] && mpv "$(ls -d */ | fzf)"* --shuffle  && exit
-#[[ "$shuffle" == "Y" ]] && mpv "$(ls -d */ | fzf)"* --shuffle  && exit
-#[[ "$shuffle" == "" ]] && mpv "$(ls -d */ | fzf)"* --shuffle  && exit
-mpv "$(ls -d */ | fzf)"* --shuffle --input-ipc-server=/tmp/mpvsocket && exit
+mpv "$(ls -d */ | fzf)"* --shuffle && exit

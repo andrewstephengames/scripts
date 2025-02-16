@@ -1,0 +1,4 @@
+#!/bin/sh
+#inxi -s | grep temp | cut -d: -f6
+#inxi -s | grep temp | cut -d: -f6
+./inout $(inxi -s | grep temp | cut -d: -f6)
