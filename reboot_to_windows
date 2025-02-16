@@ -1,0 +1,2 @@
+#!/bin/sh
+zenity --question --text="Reboot to Windows?" --icon-name=windows && sudo grub-reboot 3 && shutdown -r now
