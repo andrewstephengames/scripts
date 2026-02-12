@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 cd $HOME/Pictures/wallpapers/
 wall=$(ls *.jpg | sort -R | head -n1)
+echo "$(date):$wall" >> $HOME/.config/randbg/log.txt
 #notify-send "$(echo $wall)"
 prevhome=$HOME/Pictures/wallpapers/
-[[ $XDG_SESSION_TYPE = "x11" ]] && HOME=$HOME/.config/feh feh --bg-fill "$prevhome/$wall"
+[[ $XDG_SESSION_TYPE = "x11" ]] && HOME=$HOME/.config/feh feh --bg-fill --auto-zoom "$prevhome/$wall"
 [[ $XDG_SESSION_TYPE = "wayland" ]] && swaybg -i "$wall" -m fill

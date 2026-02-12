@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 if [ ! -z $1 ]; then
 	cd ~/Music/$1
-	mpv "$(ls -d */ | fzf)"* --shuffle && exit
+	mpv "$(ls -d */ | fzf)"* --shuffle --no-audio-display && exit
 fi
 cd ~/Music
-mpv "$(ls -d */ | fzf)"* --shuffle && exit
+mpv "$(ls -d */ | fzf)"* --shuffle --no-audio-display && exit
