@@ -1,0 +1,34 @@
+#!/bin/bash
+
+INSTANCES_DIR="$HOME/.local/share/PrismLauncher/instances"
+DEST_DIR="$HOME/Screenshots"
+
+mkdir -p "$DEST_DIR"
+
+count=0
+
+echo "Scanning for screenshots in Prism Launcher instances..."
+
+for instance_path in "$INSTANCES_DIR"/*; do
+    if [ -d "$instance_path" ]; then
+        instance_name=$(basename "$instance_path")
+        
+        screenshot_dir="$instance_path/.minecraft/screenshots"
+        
+        if [ -d "$screenshot_dir" ]; then
+            for file in "$screenshot_dir"/*; do
+                if [ -f "$file" ]; then
+                    filename=$(basename "$file")
+                    
+                    new_filename="${instance_name}_${filename}"
+                    
+                    cp -n "$file" "$DEST_DIR/$new_filename"
+                    
+                    ((count++))
+                fi
+            done
+        fi
+    fi
+done
+
+echo "Aggregation complete! Copied $count screenshots to $DEST_DIR."
